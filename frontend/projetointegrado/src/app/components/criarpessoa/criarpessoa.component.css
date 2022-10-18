@@ -1,0 +1,9 @@
+form {
+    width: 85%;
+    margin: 2rem auto 0 auto;
+    text-align: center;
+}
+
+.data-nascimento {
+    text-align: left;
+}

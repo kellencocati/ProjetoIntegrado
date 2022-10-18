@@ -1,0 +1,34 @@
+[
+  {
+    "codigoPessoa": 1,
+    "nome": "Testes",
+    "dataNascimento": "17/10/2022",
+    "cidadeNatal": "final String cidadeNatal",
+    "endereco": {
+      "codigoEndereco": 1,
+      "logradouro": "final String logradouro",
+      "bairro": "final String bairro",
+      "cep": "final String cep",
+      "cidade": {
+        "codigoCidade": 1,
+        "nome": "final String nome",
+        "estado": {
+          "codigoEstado": 1,
+          "nome": "final String nome",
+          "pais": { "codigoPais": 1, "nome": "Brasil" }
+        }
+      }
+    },
+    "numeroEndereco": 1,
+    "complementoEndereco": "final String complementoEndereco",
+    "sexo": "final String sexo",
+    "cpf": "final String cpf",
+    "dataCadastro": "16/02/1987",
+    "telefoneResidencial": "final String telefoneResidencial",
+    "telefoneCelular": "final String telefoneCelular",
+    "documento": "final String documento",
+    "tipoDocumento": "final String tipoDocumento",
+    "senhaAcesso": "final String senhaAcesso",
+    "email": "final String email"
+  }
+]
