@@ -1,14 +1,16 @@
+import { Data } from "@angular/router";
+
 export interface Pessoa {
     codigoPessoa?: String,
     nome: String,
-    dataNascimento: String,
+    dataNascimento: any,
     cidadeNatal: String,
     endereco: String,
     numeroEndereco: String,
     complementoEndereco: String,
     sexo: String,
     cpf: String,
-    dataCadastro: String,
+    dataCadastro: any,
     telefoneResidencial: String,
     telefoneCelular: String,
     documento: String,
