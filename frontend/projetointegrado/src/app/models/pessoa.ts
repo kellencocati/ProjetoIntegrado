@@ -1,11 +1,9 @@
-import { endereco } from "./endereco";
-
 export interface Pessoa {
     codigoPessoa?: String,
     nome: String,
     dataNascimento: String,
     cidadeNatal: String,
-    endereco: endereco,
+    endereco: String,
     numeroEndereco: String,
     complementoEndereco: String,
     sexo: String,

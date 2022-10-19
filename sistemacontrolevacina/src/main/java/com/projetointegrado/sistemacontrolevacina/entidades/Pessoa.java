@@ -11,8 +11,6 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 @Entity
@@ -29,9 +27,7 @@ public class Pessoa {
     @JsonFormat(pattern = "dd/MM/yyyy")
     private LocalDate dataNascimento;
     private String cidadeNatal;
-    @ManyToOne
-    @JoinColumn(name = "endereco_codigo_endereco")
-    private Endereco endereco;
+    private String endereco;
     private Integer numeroEndereco;
     private String complementoEndereco;
     private String sexo;
@@ -54,7 +50,7 @@ public class Pessoa {
                       final String nome,
                       final LocalDate dataNascimento,
                       final String cidadeNatal,
-                      final Endereco endereco,
+                      final String endereco,
                       final Integer numeroEndereco,
                       final String complementoEndereco,
                       final String sexo,
@@ -116,11 +112,11 @@ public class Pessoa {
         this.cidadeNatal = cidadeNatal;
     }
 
-    public Endereco getEndereco() {
+    public String getEndereco() {
         return endereco;
     }
 
-    public void setEndereco(Endereco endereco) {
+    public void setEndereco(String endereco) {
         this.endereco = endereco;
     }
 

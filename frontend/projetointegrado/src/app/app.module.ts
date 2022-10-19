@@ -16,6 +16,7 @@ import { MatInputModule } from "@angular/material/input";
 import { CriarpessoaComponent } from "./components/criarpessoa/criarpessoa.component";
 import { MatDatepickerModule } from "@angular/material/datepicker";
 import { MatNativeDateModule } from "@angular/material/core";
+import { MatMenuModule } from "@angular/material/menu";
 
 @NgModule({
   declarations: [
@@ -38,6 +39,7 @@ import { MatNativeDateModule } from "@angular/material/core";
     FormsModule,
     MatDatepickerModule,
     MatNativeDateModule,
+    MatMenuModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

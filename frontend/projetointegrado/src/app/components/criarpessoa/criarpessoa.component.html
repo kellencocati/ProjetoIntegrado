@@ -1,29 +1,75 @@
 <form action="">
-  <h1>Criar novo</h1>
-  <div class="nomeData">
-    <mat-form-field class="example-full-width" appearance="fill">
+  <h1>Criar nova Pessoa</h1>
+  <div class="form">
+    <mat-form-field class="class-input" appearance="fill">
       <mat-label>Nome</mat-label>
       <input matInput />
     </mat-form-field>
-    <mat-form-field class="data-nascimento" appearance="fill">
-      <mat-label>Input disabled</mat-label>
+    <mat-form-field class="data-nascimento class-input" appearance="fill">
+      <mat-label>Data de Nascimento</mat-label>
       <input matInput [matDatepicker]="dp3" disabled />
       <mat-datepicker-toggle matSuffix [for]="dp3"></mat-datepicker-toggle>
       <mat-datepicker #dp3 disabled="false"></mat-datepicker>
     </mat-form-field>
-  </div>
-  <div class="cidadeEndereco">
-    <mat-form-field class="example-full-width" appearance="fill">
+    <mat-form-field class="class-input" appearance="fill">
       <mat-label>Cidade Natal</mat-label>
       <input matInput />
     </mat-form-field>
-    <mat-form-field class="example-full-width" appearance="fill">
+  </div>
+  <div class="form">
+    <mat-form-field class="class-input" appearance="fill">
       <mat-label>Endereço</mat-label>
+      <input matInput />
+    </mat-form-field>
+    <mat-form-field class="class-input" appearance="fill">
+      <mat-label>Numero endereço</mat-label>
+      <input matInput />
+    </mat-form-field>
+    <mat-form-field class="class-input" appearance="fill">
+      <mat-label>Complemento do Endereço</mat-label>
+      <input matInput />
+    </mat-form-field>
+  </div>
+  <div class="form">
+    <mat-form-field class="class-input" appearance="fill">
+      <mat-label>Sexo</mat-label>
+      <input matInput />
+    </mat-form-field>
+    <mat-form-field class="class-input" appearance="fill">
+      <mat-label>CPF</mat-label>
+      <input matInput />
+    </mat-form-field>
+    <mat-form-field class="class-input" appearance="fill">
+      <mat-label>Telefone Residencial</mat-label>
+      <input matInput />
+    </mat-form-field>
+  </div>
+  <div class="form">
+    <mat-form-field class="class-input" appearance="fill">
+      <mat-label>Telefone Celular</mat-label>
+      <input matInput />
+    </mat-form-field>
+    <mat-form-field class="class-input" appearance="fill">
+      <mat-label>Documento</mat-label>
+      <input matInput />
+    </mat-form-field>
+    <mat-form-field class="class-input" appearance="fill">
+      <mat-label>Tipo do Documento</mat-label>
+      <input matInput />
+    </mat-form-field>
+  </div>
+  <div class="form">
+    <mat-form-field class="class-input" appearance="fill">
+      <mat-label>Senha Acesso</mat-label>
+      <input matInput />
+    </mat-form-field>
+    <mat-form-field class="class-input" appearance="fill">
+      <mat-label>E-mail</mat-label>
       <input matInput />
     </mat-form-field>
   </div>
   <div class="buttons">
-    <button (click)="voltar()">Voltar</button>
-    <button>Inserir</button>
+    <button (click)="voltar()" class="novo mat-elevation-z8" mat-stroked-button color="primary">Voltar</button>
+    <button class="novo mat-elevation-z8"   mat-stroked-button color="primary">Inserir</button>
   </div>
 </form>

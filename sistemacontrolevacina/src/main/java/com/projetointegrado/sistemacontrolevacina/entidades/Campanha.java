@@ -8,7 +8,6 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
-import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
 @Entity
@@ -26,9 +25,7 @@ public class Campanha {
     @ManyToOne
     @JoinColumn(name = "vacina_id")
     private Vacina vacina;
-    @OneToOne
-    @JoinColumn(name = "cidade_codigo_cidade")
-    private Cidade cidade;
+    private String cidade;
 
     public Campanha() {
     }
@@ -81,11 +78,11 @@ public class Campanha {
         this.vacina = vacina;
     }
 
-    public Cidade getCidade() {
+    public String getCidade() {
         return cidade;
     }
 
-    public void setCidade(Cidade cidade) {
+    public void setCidade(String cidade) {
         this.cidade = cidade;
     }
 }

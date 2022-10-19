@@ -7,3 +7,26 @@ form {
 .data-nascimento {
     text-align: left;
 }
+
+h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 3rem;
+}
+
+.form{
+    width: 100%;
+}
+
+.buttons {
+    width: 100%;
+}
+
+button {
+    margin-right: .5rem;
+}
+
+.class-input{
+    margin-left: 1rem;
+    width: 30%;
+}
