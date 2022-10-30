@@ -40,8 +40,8 @@ public class Utilitario {
         person.setEndereco("Rua Dr Alarico de Toledo Piza");
         person.setNumeroEndereco(28);
         person.setComplementoEndereco("A casa 23");
-        person.setDataCadastro(LocalDate.now());
-        person.setDataNascimento(LocalDate.of(1978, 2, 16));
+        person.setDataCadastro(LocalDate.now().toString());
+        person.setDataNascimento("16/02/1978");
         person.setSenhaAcesso("123456");
         person.setSexo("Masculino");
         person.setTelefoneCelular("11980880708");

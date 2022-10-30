@@ -48,8 +48,10 @@ export class CriarpessoaComponent implements OnInit {
   formataData(): void {
     let dataNascimento = new Date(this.pessoa.dataNascimento);
     this.pessoa.dataNascimento = `${dataNascimento.getDate()}/${dataNascimento.getMonth() + 1}/${dataNascimento.getFullYear()}`;
+    console.log(this.pessoa.dataNascimento);
     let dataCadastro = new Date(this.pessoa.dataCadastro);
     this.pessoa.dataCadastro = `${dataCadastro.getDate()}/${dataCadastro.getMonth() + 1}/${dataCadastro.getFullYear()}`;
+    console.log(this.pessoa.dataCadastro);
   }
 
 }

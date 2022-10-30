@@ -22,20 +22,14 @@ public class Pessoa {
     @Column(name = "ID", nullable = false)
     private Long codigoPessoa;
     private String nome;
-    @JsonSerialize(using = LocalDateSerializer.class)
-    @JsonDeserialize(using = LocalDateDeserializer.class)
-    @JsonFormat(pattern = "dd/MM/yyyy")
-    private LocalDate dataNascimento;
+    private String dataNascimento;
     private String cidadeNatal;
     private String endereco;
     private Integer numeroEndereco;
     private String complementoEndereco;
     private String sexo;
     private String cpf;
-    @JsonSerialize(using = LocalDateSerializer.class)
-    @JsonDeserialize(using = LocalDateDeserializer.class)
-    @JsonFormat(pattern = "dd/MM/yyyy")
-    private LocalDate dataCadastro;
+    private String dataCadastro;
     private String telefoneResidencial;
     private String telefoneCelular;
     private String documento;
@@ -48,14 +42,14 @@ public class Pessoa {
 
         public Pessoa(final Long codigoPessoa,
                       final String nome,
-                      final LocalDate dataNascimento,
+                      final String dataNascimento,
                       final String cidadeNatal,
                       final String endereco,
                       final Integer numeroEndereco,
                       final String complementoEndereco,
                       final String sexo,
                       final String cpf,
-                      final LocalDate dataCadastro,
+                      final String dataCadastro,
                       final String telefoneResidencial,
                       final String telefoneCelular,
                       final String documento,
@@ -96,11 +90,11 @@ public class Pessoa {
         this.nome = nome;
     }
 
-    public LocalDate getDataNascimento() {
+    public String getDataNascimento() {
         return dataNascimento;
     }
 
-    public void setDataNascimento(LocalDate dataNascimento) {
+    public void setDataNascimento(String dataNascimento) {
         this.dataNascimento = dataNascimento;
     }
 
@@ -152,11 +146,11 @@ public class Pessoa {
         this.cpf = cpf;
     }
 
-    public LocalDate getDataCadastro() {
+    public String getDataCadastro() {
         return dataCadastro;
     }
 
-    public void setDataCadastro(LocalDate dataCadastro) {
+    public void setDataCadastro(String dataCadastro) {
         this.dataCadastro = dataCadastro;
     }
 
